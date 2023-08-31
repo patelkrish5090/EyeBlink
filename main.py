@@ -6,7 +6,7 @@ import time
 
 # Load face and eye detection models from dlib
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("facial-landmarks-recognition-master\\facial-landmarks-recognition-master\\shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
 def eye_aspect_ratio(eye):
     # Compute the Euclidean distances between the two sets of vertical eye landmarks
